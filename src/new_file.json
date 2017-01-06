@@ -1,0 +1,92 @@
+[
+    {
+        "id":"1",
+        "result": [
+            {
+                "cls": "iconfont icon-meishi",
+                "title": "美食"
+            },
+            {
+                "cls": "iconfont icon-dianying2",
+                "title": "电影"
+            },
+            {
+                "cls": "iconfont icon-hotel",
+                "title": "酒店"
+            },
+            {
+                "cls": "iconfont icon-xiuxianyule",
+                "title": "休闲娱乐"
+            },
+            {
+                "cls": "iconfont icon-waimai",
+                "title": "外卖"
+            },
+            {
+                "cls": "iconfont icon-ktv",
+                "title": "KTV"
+            },
+            {
+                "cls": "iconfont icon-zhoubianyou",
+                "title": "周边游"
+            },
+            {
+                "cls": "iconfont icon-liren",
+                "title": "丽人"
+            },
+            {
+                "cls": "iconfont icon-kuaican",
+                "title": "小吃快餐"
+            },
+            {
+                "cls": "iconfont icon-huochepiaodingdan",
+                "title": "机票/火车票"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "result": [
+            {
+                "cls":"iconfont icon-anmo",
+                "title": "足疗"
+            },
+            {
+                "cls": "iconfont icon-jinrirenwu",
+                "title": "今日新单"
+            },
+            {
+                "cls": "iconfont icon-shenghuofuwu",
+                "title": "生活服务"
+            },
+            {
+                "cls": "iconfont icon-jjshyinpintiandian",
+                "title": "甜点饮品"
+            },
+            {
+                "cls": "iconfont icon-jjshqinzimuying",
+                "title": "母婴亲子"
+            },
+            {
+                "cls": "iconfont icon-tuanduixuexi",
+                "title": "学习培训"
+            },
+            {
+                "cls": "iconfont icon-jiehun-copy",
+                "title": "结婚"
+            },
+            {
+                "cls": "iconfont icon-jiazhuangjiancai",
+                "title": "家装"
+            },
+            {
+                "cls": "iconfont icon-daijinquan1",
+                "title": "代金券"
+            },
+            {
+                "cls":"iconfont icon-quanbufenleiff4a00",
+               "title": "全部分类"
+            }
+        ]
+    }
+]

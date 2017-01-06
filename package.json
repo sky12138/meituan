@@ -1,0 +1,29 @@
+{
+  "name": "dist",
+  "version": "1.0.0",
+  "description": "e",
+  "main": "index.js",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp-less": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "s"
+  },
+  "keywords": [
+    "123456"
+  ],
+  "author": "sky12138",
+  "license": "ISC"
+}

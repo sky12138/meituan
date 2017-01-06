@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+	</head>
+	<body ng-app="myApp">
+		<!--引入头部-->
+		<div ng-controller="firstcontroller">
+		   <div  ng-include='"inddex.html"'>
+			
+		   </div>
+		</div>
+		
+		<!--菜单轮播-->
+		<div ng-controller="secondcontroller">
+		  <div class="swiper-container" >
+             <div class="swiper-wrapper">
+                 <!--第一屏-->	
+                  <div class="swiper-slide">
+            	   <div ng-repeat="i in list">
+            		    <a href="#">
+            			  <i ng-class="'{{i.cls}}'"></i>
+            			  <p>{{i.title}}</p>
+            		    </a>
+            	   </div>
+                </div>
+                 <!--第二屏-->
+                  <div class="swiper-slide">
+            	   <div ng-repeat="ii in list2">
+            		   <a href="#">
+            			  <i ng-class="'{{ii.cls}}'"></i>
+            			  <p>{{ii.title}}</p>
+            		    </a>
+            	    </div>
+                </div>
+                </div>
+             <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+          </div>
+		</div>
+		
+		<div id="show">
+       	<div>
+       		<a href="#">
+       			<span>
+       				<strong>我们约吧</strong><br /><br />
+       				<small>恋人家人好朋友</small>
+       			</span><br />
+       			<span>
+       				<img src="img/show1.png">
+       			</span>
+       		</a>
+       	</div>
+       	<div class="show_b">
+       		<div>
+       			<a href="#">
+       			  <span>
+       				<strong>低价超值</strong><br /><br />
+       				<small>十元惠生活</small>
+       			  </span>
+       			  <img src="img/show3.jpg">
+       			</a>
+       		</div>
+       		<div>
+       			<a href="#">
+       			  <span>
+       				<strong>午后时光</strong><br />
+       				<small>懒懒下午茶</small>
+       			  </span><br />
+       			  <span>
+       			  	<img src="img/show2.png">
+       			  </span>
+       			</a>
+       		</div>
+       		<div>
+       			<span>
+       				<strong>名店抢购</strong><br />
+       				<small>距离结束</small>
+       			</span><br />
+       			<span id=time ng-controller="timecontroller">
+       				<span id="hour">
+       					{{hour}}
+       				</span>
+       				<span id="Minute">
+       					{{minute}}
+       				</span>
+       				<span id="second">
+       					{{second}}
+       				</span>
+       				<span></span>
+       			</span>
+       		</div>
+       	</div>
+       </div>
+
+        <div id="list_box" ng-controller='DemoController'>
+       	  <header>
+       		<h1>
+       			猜你喜欢
+       		</h1>
+       	  </header>
+       	  
+       	  <div infinite-scroll='reddit.nextPage()'  infinite-scroll-distance='1'>
+	            <ul id="list" ng-repeat='item in reddit.items'>
+	              <li>
+	              	<img src="img/show3.jpg">
+	              	  by-{{item.author}} -<br />
+	                  <a ng-href='http://reddit.com{{item.permalink}}' target='_blank'> {{item.authorid}}</a>
+	                  <div>
+	                  	{{item.subject}}
+	                  </div>
+	                  <div id="gg">
+	                  	{{item.tid|currency:'&yen'}}
+	                  </div>
+	              </li>
+	            </ul>
+	            <div ng-show='reddit.busy'>
+	          	  <img src="img/load.gif" ng-show="reddit.img"/>
+	          	  <button ng-click="reddit.more()">是否加载更多内容？</button>
+	            </div>
+          </div>
+        </div>
+       
+       <div class="more">
+       	<h1>
+       		加载更多内容 
+       	</h1>
+       </div>
+       
+       <footer id="footer">
+         <div class="footer_top">
+         	<div>登录</div>
+         	<div>注册</div>
+         	<div>深圳</div>
+         	<div>城市：</div>
+         </div>
+         <ul class="footer_list">
+         	<li>首页</li>
+         	<li>订单</li>
+         	<li>美团下载</li>
+         	<li>电脑版</li>
+         	<li>帮助</li>
+         </ul>
+         <div class="link">
+         	友情链接：
+         	<span>猫眼电影</span>
+         </div>
+         <div class="copy">
+         	©2016 美团网 
+         </div>
+       </footer>
+
+<script  src="js/jquery-1.8.3.min.js" ></script>
+<!--angulaJs-->	
+<script type="text/javascript" src="js/angular.min.js"></script>
+<!--infinite-scroll.min.js-->
+<script  src="js/ng-infinite-scroll.min.js" ></script>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<!--js-->
+<script src="js/index.js"></script>
+	</body>
+</html>
